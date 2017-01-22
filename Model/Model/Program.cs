@@ -52,7 +52,7 @@ namespace Model
 
             for (int i = 0; i < numCars; i++)
             {
-                aveTime += randNum.Next(15,17);      // time in toll booth
+                aveTime += randNum.Next(12,17);      // time in toll booth
                 carsAcc = randNum.Next(3, 4);       // acceleration for ith car
 
                 // total distance a car will travel in merging zones
