@@ -1,0 +1,6 @@
+C:\Users\Michael Townsend\Desktop\Development\Zip Zip Modeling\Model\Model\bin\Debug\Model.exe.config
+C:\Users\Michael Townsend\Desktop\Development\Zip Zip Modeling\Model\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\Michael Townsend\Desktop\Development\Zip Zip Modeling\Model\Model\bin\Debug\Model.exe
+C:\Users\Michael Townsend\Desktop\Development\Zip Zip Modeling\Model\Model\bin\Debug\Model.pdb
+C:\Users\Michael Townsend\Desktop\Development\Zip Zip Modeling\Model\Model\obj\Debug\Model.exe
+C:\Users\Michael Townsend\Desktop\Development\Zip Zip Modeling\Model\Model\obj\Debug\Model.pdb
