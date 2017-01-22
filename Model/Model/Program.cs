@@ -17,18 +17,20 @@ namespace Model
             Console.Write("Enter the number of final number of lanes you will merge the traffic into: ");
             double finalNumLanes = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Enter the time delay at each toll booth per car: ");
-            double boothDelay = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Enter the time delay at each toll booth per car: ");
+            //double boothDelay = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("Enter how many cars do you want to use in the simulation: ");
             double numCars = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Enter the rate of acceleration per car: ");
-            double carsAcc = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Enter the rate of acceleration per car: ");
+            //double carsAcc = Convert.ToDouble(Console.ReadLine());
 
             double aveTime = 0.0;  //final average time per car
             double numMerges = 0.0;
+            double carsAcc;
             const double mergeDistance = 200.0;
+            Random randNum = new Random();
 
             // Determine how many tapers are needed to get the overall length of the merging zone
             // Each merge reduces the number of lanes by either a quarter or 1, whichever is greater
@@ -50,7 +52,8 @@ namespace Model
 
             for (int i = 0; i < numCars; i++)
             {
-                aveTime += boothDelay;      //time in toll booth
+                aveTime += randNum.Next(15,17);      // time in toll booth
+                carsAcc = randNum.Next(3, 4);       // acceleration for ith car
 
                 // total distance a car will travel in merging zones
                 double distance = numMerges* mergeDistance;
@@ -64,6 +67,8 @@ namespace Model
             }
 
             aveTime /= numCars;
+
+            Console.WriteLine("The average time for each car is: " + aveTime);
 
             // assume the lanes are 12 feet wide which is the norm for interstate (TODO: find documentation)
             // use this info in the lane shift formula
